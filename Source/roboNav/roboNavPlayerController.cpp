@@ -5,7 +5,9 @@
 #include "Runtime/Engine/Classes/Components/DecalComponent.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "roboNavCharacter.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "Engine/World.h"
+
 
 AroboNavPlayerController::AroboNavPlayerController()
 {
@@ -13,30 +15,33 @@ AroboNavPlayerController::AroboNavPlayerController()
 	DefaultMouseCursor = EMouseCursor::Crosshairs;
 }
 
-void AroboNavPlayerController::PlayerTick(float DeltaTime)
-{
-	Super::PlayerTick(DeltaTime);
-
-	// keep updating the destination every tick while desired
-	if (bMoveToMouseCursor)
-	{
-		MoveToMouseCursor();
-	}
-}
+//void AroboNavPlayerController::PlayerTick(float DeltaTime)
+//{
+//	Super::PlayerTick(DeltaTime);
+//
+//	// keep updating the destination every tick while desired
+//	if (bMoveToMouseCursor)
+//	{
+//		MoveToMouseCursor();
+//	}
+//}
 
 void AroboNavPlayerController::SetupInputComponent()
 {
 	// set up gameplay key bindings
 	Super::SetupInputComponent();
 
-	InputComponent->BindAction("SetDestination", IE_Pressed, this, &AroboNavPlayerController::OnSetDestinationPressed);
-	InputComponent->BindAction("SetDestination", IE_Released, this, &AroboNavPlayerController::OnSetDestinationReleased);
+	//InputComponent->BindAction("SetDestination", IE_Pressed, this, &AroboNavPlayerController::OnSetDestinationPressed);
+	//InputComponent->BindAction("SetDestination", IE_Released, this, &AroboNavPlayerController::OnSetDestinationReleased);
+
+	//InputComponent->BindAxis("MoveForward", this, &AroboNavPlayerController::MoveForward);
+	//InputComponent->BindAxis("MoveRight", this, &AroboNavPlayerController::MoveRight);
 
 	// support touch devices 
-	InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AroboNavPlayerController::MoveToTouchLocation);
-	InputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AroboNavPlayerController::MoveToTouchLocation);
+	//InputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AroboNavPlayerController::MoveToTouchLocation);
+	//InputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AroboNavPlayerController::MoveToTouchLocation);
 
-	InputComponent->BindAction("ResetVR", IE_Pressed, this, &AroboNavPlayerController::OnResetVR);
+	//InputComponent->BindAction("ResetVR", IE_Pressed, this, &AroboNavPlayerController::OnResetVR);
 }
 
 void AroboNavPlayerController::OnResetVR()
@@ -84,6 +89,8 @@ void AroboNavPlayerController::MoveToTouchLocation(const ETouchIndex::Type Finge
 	}
 }
 
+
+
 void AroboNavPlayerController::SetNewMoveDestination(const FVector DestLocation)
 {
 	APawn* const MyPawn = GetPawn();
@@ -110,3 +117,21 @@ void AroboNavPlayerController::OnSetDestinationReleased()
 	// clear flag to indicate we should stop updating the destination
 	bMoveToMouseCursor = false;
 }
+
+
+//void AroboNavPlayerController::MoveForward(float Axis) {
+//	APawn* const MyPawn = GetPawn();
+//	FRotator Rotation = MyPawn->GetControlRotation();
+//	FRotator YawRotation(0.0f, Rotation.Yaw, 0.0f);
+//	FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+//	MyPawn->AddMovementInput(Direction, Axis);
+//
+//}
+//void AroboNavPlayerController::MoveRight(float Axis) {
+//	APawn* const MyPawn = GetPawn();
+//	FRotator Rotation = MyPawn->GetControlRotation();
+//	FRotator YawRotation(0.0f, Rotation.Yaw, 0.0f);
+//	FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+//	MyPawn->AddMovementInput(Direction, Axis);
+//}
+

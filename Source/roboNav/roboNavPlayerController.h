@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "roboNavCharacter.h"
 #include "GameFramework/PlayerController.h"
 #include "roboNavPlayerController.generated.h"
 
@@ -19,7 +20,7 @@ protected:
 	uint32 bMoveToMouseCursor : 1;
 
 	// Begin PlayerController interface
-	virtual void PlayerTick(float DeltaTime) override;
+	//virtual void PlayerTick(float DeltaTime) override;
 	virtual void SetupInputComponent() override;
 	// End PlayerController interface
 
@@ -31,6 +32,7 @@ protected:
 
 	/** Navigate player to the current touch location. */
 	void MoveToTouchLocation(const ETouchIndex::Type FingerIndex, const FVector Location);
+
 	
 	/** Navigate player to the given world location. */
 	void SetNewMoveDestination(const FVector DestLocation);
@@ -38,6 +40,10 @@ protected:
 	/** Input handlers for SetDestination action. */
 	void OnSetDestinationPressed();
 	void OnSetDestinationReleased();
+
+	//void MoveForward(float Axis);
+	//void MoveRight(float Axis);
 };
+
 
 
