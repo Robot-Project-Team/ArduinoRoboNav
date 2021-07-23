@@ -10,4 +10,4 @@ Get Started:
 1. Upload code in Arduino IDE
 2. In Unreal Engine 4, open Blueprints of TopDown Character. Change the Serial port number according to the COMM Port used by Arduino. 
 3. Click "Play" button and the game will start.
-![image](https://user-images.githubusercontent.com/60235671/126820385-772195f8-ea49-471f-a0ca-d1373d74d28f.png)
+![image](https://user-images.githubusercontent.com/60235671/126820836-14178afe-d43d-42d3-b585-23919c359452.png)
