@@ -13,6 +13,7 @@ class AroboNavGameMode : public AGameModeBase
 
 public:
 	AroboNavGameMode();
+
 };
 
 
