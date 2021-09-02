@@ -24,3 +24,5 @@ Below explains:
 2. In Unreal Engine 4, open Blueprints of TopDown Character. Change the Serial port number according to the COM Port used by Arduino. 
 3. Click "Play" button and the game will start.
 ![image](https://user-images.githubusercontent.com/60235671/126820836-14178afe-d43d-42d3-b585-23919c359452.png)
+4. Click left mouse to switch between the one-direction and bi-direction movement.
+5. Click right mouse to switch between first-person and third-person mode.
