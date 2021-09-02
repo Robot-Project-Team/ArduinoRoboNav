@@ -8,7 +8,7 @@ Below explains:
  - Screenshot of robot in a 2.5D environment:
 ![image](https://user-images.githubusercontent.com/60235671/126192124-3532222e-b3f1-4ab8-9f20-414f865b5bee.png)
 
-Role of each folders:
+# Role of each folders:
 
 RoboNav_new_chair -- UE4 project for Chair Chair design. See "Get Started" section below before running it.
 IMU_UE4_chair -- Code for chair chair design. Upload it to Arduino beofore running RoboNav_new_chair.
@@ -19,7 +19,7 @@ IMU_UE4_wobble -- Code for wobble board design. Upload it to Arduino beofore run
 Accel_test2 -- Code for Arduino. If needed, upload it to Arduino to check the hardware connection of IMU pins with Arduino pins. It will also show the accelerometer readings.
 FSR_cpp -- Code for Arduino. If needed, upload it to Arduino to check the force measurement of the two FSR sensors.
 
-Get Started:
+# Get Started:
 1. Upload code in Arduino IDE
 2. In Unreal Engine 4, open Blueprints of TopDown Character. Change the Serial port number according to the COM Port used by Arduino. 
 3. Click "Play" button and the game will start.
