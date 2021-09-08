@@ -11,13 +11,13 @@ Below explains:
 ### Role of each folders:
 
 - RoboNav_new_chair -- UE4 project for Chair Chair design. See "Get Started" section below before running it.
-- IMU_UE4_chair -- Code for chair chair design. Upload it to Arduino beofore running RoboNav_new_chair.
+- IMU_UE4_chair -- Arduino code for chair chair design. Upload it to Arduino before running RoboNav_new_chair.
 
 - RoboNav_new_wobble -- UE4 project for wobble board design.
-- IMU_UE4_wobble -- Code for wobble board design. Upload it to Arduino beofore running RoboNav_new_wobble.
-
-- Accel_test2 -- Code for Arduino. If needed, upload it to Arduino to check the hardware connection of IMU pins with Arduino pins. It will also show the accelerometer readings.
-- FSR_cpp -- Code for Arduino. If needed, upload it to Arduino to check the force measurement of the two FSR sensors.
+- IMU_UE4_wobble -- Arduino code for wobble board design. Upload it to Arduino before running RoboNav_new_wobble.
+#### Code for hardware debugging:
+- Accel_test2 -- Arduino code. If needed, upload it to Arduino to check the hardware connection of IMU pins with Arduino pins. It will also show the accelerometer readings.
+- FSR_cpp -- Arduino code. If needed, upload it to Arduino to check the force measurement of the two FSR sensors.
 
 ### Get Started:
 1. Upload code in Arduino IDE
