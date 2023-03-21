@@ -1,3 +1,8 @@
+A DEMO for the cockpit of the virtual robot:
+![IMG_7050](https://user-images.githubusercontent.com/60235671/226649807-a5863d6a-033d-4e11-8e3f-b8737a61b178.jpg)
+A link to the video of controlling the robot:
+https://drive.google.com/file/d/1fNZmQ_goI6pZimLXsUi_oXv1Iwmf9GLh/view?usp=share_link
+
 # roboNav
 Users are able to control the robot with Arduino in the Virtual robot navigation environment made in Unreal Engine 4.26.2. The robot is currently represented by a trapezoidal prism, with rigid body physics enabled.
 
