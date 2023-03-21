@@ -1,5 +1,6 @@
 A DEMO for the cockpit of the virtual robot:
-![cockpit](https://user-images.githubusercontent.com/60235671/226650714-7109b700-67c8-4877-9a35-bb4deeba51ef.jpg)
+![cockpit](https://user-images.githubusercontent.com/60235671/226650988-3f393eea-1c00-4db7-a4ca-7f304a87a370.jpg)
+
 
 A link to the video of controlling the robot:
 https://drive.google.com/file/d/1fNZmQ_goI6pZimLXsUi_oXv1Iwmf9GLh/view?usp=share_link
